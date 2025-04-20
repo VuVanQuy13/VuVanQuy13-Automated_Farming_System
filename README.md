@@ -18,3 +18,5 @@ Giám sát liên tục các thông số môi trường và hiển thị trên m�
 Cho phép người dùng điều chỉnh ngưỡng thông qua nút nhấn và lưu trữ vào EEPROM
 
 Hỗ trợ điều khiển thủ công các thiết bị thông qua nút nhấn
+
+Thiết kế mạch in PCB với Altium Designer
