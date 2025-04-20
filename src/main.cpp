@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <LiquidCrystal_I2C.h>
 #include <EEPROM.h>
 #include <DHT.h>
@@ -44,6 +45,24 @@ bool isLightOn = false;
 bool isFanOn = false;
 
 #define DEBOUNCE_DELAY 50
+
+
+void saveThresholdsToEEPROM() {
+  for (int i = 0; i < 4; i++) {
+    EEPROM.write(i, thresholds[i]);
+  }
+}
+
+void loadThresholdsFromEEPROM() {
+  for (int i = 0; i < 4; i++) {
+    thresholds[i] = EEPROM.read(i);
+    
+    if (thresholds[i] > 100) 
+    {
+      thresholds[i] = (i == 0) ? 40 : (i == 1) ? 35 : (i == 2) ? 85 : 30;
+    }
+  }
+}
 
 void setup() {
 
@@ -99,22 +118,6 @@ void setup() {
  
 }
 
-void saveThresholdsToEEPROM() {
-  for (int i = 0; i < 4; i++) {
-    EEPROM.write(i, thresholds[i]);
-  }
-}
-
-void loadThresholdsFromEEPROM() {
-  for (int i = 0; i < 4; i++) {
-    thresholds[i] = EEPROM.read(i);
-    
-    if (thresholds[i] > 100) 
-    {
-      thresholds[i] = (i == 0) ? 40 : (i == 1) ? 35 : (i == 2) ? 85 : 30;
-    }
-  }
-}
 
 bool debounce(int buttonIndex, int pin) 
 {
