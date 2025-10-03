@@ -6,7 +6,7 @@
 
 ## Công nghệ sử dụng
 Vi điều khiển: STM32 (hoặc Arduino framework trên chip ARM).
-* Cảm biến:
+* Cảm biến:  
 Soil Moisture sensor → đo độ ẩm đất.
 Light sensor → đo ánh sáng môi trường.
 DHT11 → đo nhiệt độ, độ ẩm không khí.
