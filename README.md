@@ -1,5 +1,5 @@
 ## Giới thiệu 
-* Đề tài nhóm mình làm là “Hệ thống tưới cây & giám sát môi trường thông minh dùng STM32 + cảm biến IoT”.
+* Đề tài mình làm là “Hệ thống tưới cây & giám sát môi trường thông minh dùng STM32 + cảm biến IoT”.
 * Mục tiêu là tự động điều khiển bơm, đèn, quạt dựa vào các thông số: độ ẩm đất, ánh sáng, nhiệt độ, độ ẩm không khí.
 * Hệ thống có thể chỉnh ngưỡng hoạt động trực tiếp bằng nút nhấn, lưu lại trong EEPROM, hiển thị realtime trên 2 màn hình LCD.
 
