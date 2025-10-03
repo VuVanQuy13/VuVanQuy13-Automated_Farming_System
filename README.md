@@ -7,16 +7,16 @@
 ## Công nghệ sử dụng
 Vi điều khiển: STM32 (hoặc Arduino framework trên chip ARM).
 * Cảm biến:  
-Soil Moisture sensor → đo độ ẩm đất.
-Light sensor → đo ánh sáng môi trường.
-DHT11 → đo nhiệt độ, độ ẩm không khí.
-Hiển thị: 2 màn hình LCD I2C:
-LCD1 hiển thị giá trị cảm biến.
-LCD2 hiển thị ngưỡng cài đặt.
-Điều khiển thiết bị: Relay cho bơm nước, đèn, quạt.
-Lưu trữ: EEPROM (lưu ngưỡng cài đặt để không mất khi reset).
-Chức năng thủ công: Các nút nhấn riêng để bật/tắt bơm, đèn, quạt thủ công.
-Anti-bounce (Debounce): Xử lý chống dội phím khi đọc nút nhấn.
+1. Soil Moisture sensor → đo độ ẩm đất.
+2. Light sensor → đo ánh sáng môi trường.
+3. DHT11 → đo nhiệt độ, độ ẩm không khí.
+4. Hiển thị: 2 màn hình LCD I2C:
+5. LCD1 hiển thị giá trị cảm biến.
+6. LCD2 hiển thị ngưỡng cài đặt.
+7. Điều khiển thiết bị: Relay cho bơm nước, đèn, quạt.
+8. Lưu trữ: EEPROM (lưu ngưỡng cài đặt để không mất khi reset).
+* Chức năng thủ công: Các nút nhấn riêng để bật/tắt bơm, đèn, quạt thủ công.
+* Anti-bounce (Debounce): Xử lý chống dội phím khi đọc nút nhấn.
 
 ## Điểm nổi bật (kỹ thuật quan trọng)  
 * Tự viết hàm debounce() để xử lý nhiễu khi bấm nút.
