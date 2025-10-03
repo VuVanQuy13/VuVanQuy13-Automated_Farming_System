@@ -1,12 +1,12 @@
 ## Giới thiệu 
-Đề tài nhóm mình làm là “Hệ thống tưới cây & giám sát môi trường thông minh dùng STM32 + cảm biến IoT”.
-Mục tiêu là tự động điều khiển bơm, đèn, quạt dựa vào các thông số: độ ẩm đất, ánh sáng, nhiệt độ, độ ẩm không khí.
-Hệ thống có thể chỉnh ngưỡng hoạt động trực tiếp bằng nút nhấn, lưu lại trong EEPROM, hiển thị realtime trên 2 màn hình LCD.
+* Đề tài nhóm mình làm là “Hệ thống tưới cây & giám sát môi trường thông minh dùng STM32 + cảm biến IoT”.
+* Mục tiêu là tự động điều khiển bơm, đèn, quạt dựa vào các thông số: độ ẩm đất, ánh sáng, nhiệt độ, độ ẩm không khí.
+* Hệ thống có thể chỉnh ngưỡng hoạt động trực tiếp bằng nút nhấn, lưu lại trong EEPROM, hiển thị realtime trên 2 màn hình LCD.
 
 
 ## Công nghệ sử dụng
 Vi điều khiển: STM32 (hoặc Arduino framework trên chip ARM).
-Cảm biến:
+* Cảm biến:
 Soil Moisture sensor → đo độ ẩm đất.
 Light sensor → đo ánh sáng môi trường.
 DHT11 → đo nhiệt độ, độ ẩm không khí.
@@ -34,8 +34,8 @@ Lập trình relay điều khiển thiết bị một cách thông minh: nếu b
 
 
 ## Tính năng chính:  
-Giám sát liên tục các thông số môi trường và hiển thị trên màn hình LCD
-Điều khiển tự động các thiết bị dựa trên ngưỡng cài đặt
-Cho phép người dùng điều chỉnh ngưỡng thông qua nút nhấn và lưu trữ vào EEPROM
-Hỗ trợ điều khiển thủ công các thiết bị thông qua nút nhấn
-Thiết kế mạch in PCB với Altium Designer
+* Giám sát liên tục các thông số môi trường và hiển thị trên màn hình LCD
+* Điều khiển tự động các thiết bị dựa trên ngưỡng cài đặt
+* Cho phép người dùng điều chỉnh ngưỡng thông qua nút nhấn và lưu trữ vào EEPROM
+* Hỗ trợ điều khiển thủ công các thiết bị thông qua nút nhấn
+* Thiết kế mạch in PCB với Altium Designer
